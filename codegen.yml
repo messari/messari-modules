@@ -1,0 +1,20 @@
+overwrite: true
+schema: "https://graphql.messari.io/query"
+documents: "src/**/*.graphql"
+generates:
+  src/generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+    config:
+      withHooks: true
+      namingConvention:
+        enumValues: upper-case#upperCase
+      scalars:
+        Timestamp: number
+        Percentage: number
+        PaginationCursor: string
+  src/generated/modules.d.ts:
+    plugins:
+      - typescript-graphql-files-modules

@@ -1,25 +1,30 @@
 {
-  "name": "my-app",
+  "name": "messari-modules",
   "version": "0.1.0",
+  "description": "An open-source Messari Modules component library to piece together cryptocurrency data modules pulling from the Messari GraphQL server. Build your own module!",
   "private": true,
   "dependencies": {
-    "@storybook/addon-actions": "^5.3.10",
-    "@storybook/addon-docs": "^5.3.10",
-    "@storybook/addon-links": "^5.3.10",
-    "@storybook/addons": "^5.3.10",
-    "@storybook/preset-create-react-app": "^1.5.2",
-    "@storybook/react": "^5.3.10",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
+    "@emotion/react": "11.4.0",
+    "@emotion/styled": "11.3.0",
+    "@material-ui/core": "4.12.2",
+    "@storybook/addon-actions": "^6.3.6",
+    "@storybook/addon-docs": "6.3.6",
+    "@storybook/addon-links": "^6.3.6",
+    "@storybook/addons": "^6.3.6",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.6",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.7",
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "lodash.get": "4.4.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "typescript": "~3.7.2"
+    "typescript": "~4.3.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,7 +32,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "generate": "graphql-codegen --config codegen.yml"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,5 +49,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@apollo/client": "3.3.21",
+    "@emotion/babel-plugin": "11.3.0",
+    "@graphql-codegen/cli": "1.21.8",
+    "@graphql-codegen/fragment-matcher": "2.0.1",
+    "@graphql-codegen/introspection": "1.18.2",
+    "@graphql-codegen/typescript": "1.23.0",
+    "@graphql-codegen/typescript-document-nodes": "1.17.16",
+    "@graphql-codegen/typescript-graphql-files-modules": "1.18.1",
+    "@graphql-codegen/typescript-operations": "1.18.4",
+    "@graphql-codegen/typescript-react-apollo": "2.3.1",
+    "@material-ui/icons": "4.11.2",
+    "@types/lodash.get": "4.4.6",
+    "graphql": "15.5.1"
   }
 }

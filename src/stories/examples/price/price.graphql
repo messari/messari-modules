@@ -1,0 +1,18 @@
+query Price($slug: String!) {
+  asset: assetBySlug(slug: $slug) {
+    id
+    name
+    symbol
+    metrics {
+      id
+      pricing {
+        id
+        price
+      }
+      returnOnInvestment {
+        id
+        oneDayChange: change(span: ONE_DAY)
+      }
+    }
+  }
+}

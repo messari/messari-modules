@@ -1,0 +1,44 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs";
+
+<Meta title="Welcome/To Messari Modules!" />
+
+# Welcome To Messari Modules!
+
+### What is Messari Modules?
+
+Messari Modules are modularized React components used across the Messari webapp to display data in a contained and easy to digest way. Messari Modules are a family of compasable components that make up a module!
+
+### What to do with Messari Modules?
+
+This open-source project was created in an effort to allow the community to build their own modules. The module components help create a consistent look & feel and if the community creates modules that we deem are valuable, we may end up implementing them ourselves!
+
+#### Module Part Hierarchy
+
+```
+-> MessariModule
+
+  --> MessariModuleHeader
+    --> MessariModuleTitle
+    --> MessariModuleDivider
+    --> MessariModuleHeaderLinkIcon
+
+  --> MessariModuleBody
+    --> MessariModuleLoadingIncidator
+    --> Go Crazy! This is where the fun happens
+    --> MessariModuleError
+
+  --> MessariModuleFooter
+```
+
+### Fetching dta via public Messari GraphQL API (More information coming soon)
+
+The project comes with a pre-configured `MessariGQLProvider` that can be used if the consumer of the library wishes to leverage the publicly available Messari GQL API with as little setup as possible.
+
+There are two dependencies that are required to do so:
+
+1. @graphql-codegen/cli
+2. @apollo/client
+
+To leverage our GQL API, you can visit [https://graphql.messari.io/](here) to play around in our playground.
+
+Simply construct your query in a `.graphql` file and with `@graphql-codegen/cli`, you can generate a the associate fetch hooks/functions to use. If you use them inside the `MessariGQLProvider`, you will be able to fetch the data!
