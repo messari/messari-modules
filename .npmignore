@@ -1,0 +1,12 @@
+# Unfinished GQL Table (being refactored - remove when done to publish it)
+src/components/GQLTable/*
+
+# GQL query files
+src/generated/*
+src/gqlTypePolicies.ts
+src/MessariGQLProvider.tsx
+codegen.yml
+
+# Storybook
+src/stories/**/*
+.storybook/**/*
