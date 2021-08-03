@@ -1,8 +1,7 @@
 {
-  "name": "messari-modules",
-  "version": "0.1.0",
+  "name": "@messari/modules",
+  "version": "0.1.1",
   "description": "An open-source Messari Modules component library to piece together cryptocurrency data modules pulling from the Messari GraphQL server. Build your own module!",
-  "private": true,
   "dependencies": {
     "@emotion/react": "11.4.0",
     "@emotion/styled": "11.3.0",
@@ -35,9 +34,6 @@
     "build-storybook": "build-storybook -s public",
     "generate": "graphql-codegen --config codegen.yml"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -64,5 +60,22 @@
     "@material-ui/icons": "4.11.2",
     "@types/lodash.get": "4.4.6",
     "graphql": "15.5.1"
-  }
+  },
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/messari/messari-modules.git"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "react",
+    "crypto",
+    "components"
+  ],
+  "author": "Messari Engineering",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/messari/messari-modules/issues"
+  },
+  "homepage": "https://github.com/messari/messari-modules#readme"
 }
